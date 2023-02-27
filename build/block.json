@@ -2,7 +2,7 @@
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 2,
   "name": "willsides/cover-link",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "title": "Cover Link",
   "category": "design",
   "icon": "cover-image",
@@ -10,9 +10,18 @@
   "supports": {
     "html": false,
     "color": {
-      "text": true,
       "background": true,
-      "link": true
+      "text": false
+    }
+  },
+  "attributes": {
+    "page": {
+      "type": "object",
+      "default": "none"
+    },
+    "aspectRatio": {
+      "type": "string",
+      "default": "16/9"
     }
   },
   "textdomain": "cover-link",

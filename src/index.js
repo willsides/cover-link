@@ -10,7 +10,9 @@ registerBlockType( metadata.name, {
 	edit: Edit,
 
 	save() {
-		return <InnerBlocks.Content/>
+		return (
+			<InnerBlocks.Content/>
+		)
 	}
 
 } );

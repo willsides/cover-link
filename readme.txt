@@ -2,7 +2,7 @@
 Contributors:      Will Sides
 Tags:              block
 Tested up to:      6.1
-Stable tag:        1.0.0
+Stable tag:        1.1.0
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,6 +12,10 @@ A post link with text overlaid on the thumbnail
 
 Adds a Gutenberg block that displays a darkened post thumbnail as a link to that post, with hover effects.
 Also supports nested blocks, such as Post Title, Post Date, etc. to overlay on the image.
+
+Allows setting a custom aspect ratio.
+
+Allows linking to a specific page or post by setting the url in the block control bar
 
 == Installation ==
 
