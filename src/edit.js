@@ -18,16 +18,7 @@ export default function Edit( { attributes, setAttributes } ) {
 					searchInputPlaceholder="Search here..."
 					value={ attributes.page }
 					onChange={ ( newPage ) => setAttributes( { page: newPage } ) }
-					withCreateSuggestion={true}
-					createSuggestion={ (inputValue) => setAttributes( { post: {
-						...attributes.post,
-						title: inputValue,
-						type: "custom-url",
-						id: Date.now(),
-						url: inputValue
-					} } ) }
-					createSuggestionButtonText={ (newValue) => `${__("New:")} ${newValue}` }
-				
+					showInitialSuggestions={true}
 				>
 				</LinkControl>
 				<ToolbarDropdownMenu

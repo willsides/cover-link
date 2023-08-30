@@ -65,17 +65,7 @@ function Edit(_ref) {
     onChange: newPage => setAttributes({
       page: newPage
     }),
-    withCreateSuggestion: true,
-    createSuggestion: inputValue => setAttributes({
-      post: {
-        ...attributes.post,
-        title: inputValue,
-        type: "custom-url",
-        id: Date.now(),
-        url: inputValue
-      }
-    }),
-    createSuggestionButtonText: newValue => `${(0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("New:")} ${newValue}`
+    showInitialSuggestions: true
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ToolbarDropdownMenu, {
     label: "Aspect Ratio",
     icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_4__["default"],
