@@ -15,7 +15,10 @@ Supports nested blocks, such as Post Title, Post Date, etc. to overlay on the im
 
 Allows setting a custom aspect ratio.
 
-Allows linking to a specific page or post by setting the url in the block control bar
+Allows linking to a specific page or post. 
+If no link is set, it will default to the current global post.
+If the link is to a local wordpress post, it will use that post's thumbnail as the image.
+If the link is external, no image will be shown. There is a open issue to allow manual image selection for better external links (and more customizable local links)
 
 == Installation ==
 
