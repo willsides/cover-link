@@ -11,7 +11,7 @@ A post link with text overlaid on the thumbnail
 == Description ==
 
 Adds a Gutenberg block that displays a darkened post thumbnail as a link to that post, with hover effects.
-Also supports nested blocks, such as Post Title, Post Date, etc. to overlay on the image.
+Supports nested blocks, such as Post Title, Post Date, etc. to overlay on the image.
 
 Allows setting a custom aspect ratio.
 
