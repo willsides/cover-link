@@ -23,4 +23,11 @@
   background-size: cover;
 }
 
+.ws-grid-item-overlay-container > * {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 /*# sourceMappingURL=style-index.css.map*/

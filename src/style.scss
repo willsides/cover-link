@@ -9,6 +9,7 @@
     align-items: center;
     background-color: rgba(0,0,0,0.35);
 }
+
 .ws-grid-item-overlay-container:hover {
     background-color: rgba(0,0,0,0.5);
     transition: 0.2s;
@@ -16,4 +17,11 @@
 .wp-block-willsides-cover-link {
     background-position: center;
     background-size: cover;
+}
+
+.ws-grid-item-overlay-container > * {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
