@@ -22,6 +22,22 @@
 		"aspectRatio": {
 			"type" : "string",
 			"default": "16/9"
+		},
+		"useCustomImage": {
+			"type": "boolean",
+			"default": false
+		},
+		  "imageUrl": {
+			"type": "string",
+			"default": ""
+		},
+		  "overlayColor": {
+			"type": "string",
+			"default": "rgba(0, 0, 0, 0.35)"
+		},
+		  "overlayHoverColor": {
+			"type": "string",
+			"default": "rgba(0, 0, 0, 0.5)"
 		}
 	},
 	"textdomain": "cover-link",
