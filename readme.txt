@@ -25,7 +25,7 @@ The default behavior is a darkened overlay, that gets darker when hovered.
 
 == Installation ==
 
-1. Upload the following files and directories to the `/wp-content/plugins/activity-date` directory:
+1. Upload the following files and directories to the `/wp-content/plugins/cover-link` directory:
 	* build/
 	* cover-link.php
 
