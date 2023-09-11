@@ -35,7 +35,10 @@ export default function Edit( { attributes, setAttributes } ) {
 				<LinkControl
 					searchInputPlaceholder="Search here..."
 					value={ page }
-					onChange={ ( newPage ) => setAttributes( { page: newPage } ) }
+					onChange={ ( newPage ) => {
+						setAttributes( { page: null } ) 
+						setAttributes( { page: newPage } ) 
+					}}
 					showInitialSuggestions={true}
 				>
 				</LinkControl>

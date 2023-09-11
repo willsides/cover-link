@@ -79,9 +79,14 @@ function Edit(_ref) {
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.BlockControls, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.__experimentalLinkControl, {
     searchInputPlaceholder: "Search here...",
     value: page,
-    onChange: newPage => setAttributes({
-      page: newPage
-    }),
+    onChange: newPage => {
+      setAttributes({
+        page: null
+      });
+      setAttributes({
+        page: newPage
+      });
+    },
     showInitialSuggestions: true
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ToolbarDropdownMenu, {
     label: "Aspect Ratio",

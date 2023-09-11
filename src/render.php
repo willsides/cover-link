@@ -9,7 +9,11 @@ $background_image_url = esc_url(
 $aspect_ratio = esc_attr(isset($attributes['aspectRatio']) ? $attributes['aspectRatio'] : '16/9');
 $overlayColor = esc_attr($attributes['overlayColor'] ?? 'rgba(0, 0, 0, 0.35)');
 $overlayHoverColor = esc_attr($attributes['overlayHoverColor'] ?? 'rgba(0, 0, 0, 0.5)');
-$permalink = esc_url(get_the_permalink(isset($attributes['page']['id']) ? $attributes['page']['id'] : null));
+$permalink = isset($attributes['page']['url']) ? 
+    esc_url($attributes['page']['url']) :
+    esc_url(get_the_permalink(isset($attributes['page']['id']) ?
+        $attributes['page']['id'] :
+        null));
 
 // Prepare inline CSS
 $inline_styles = sprintf(
