@@ -65,7 +65,7 @@ function Edit(_ref) {
     setAttributes
   } = _ref;
   const {
-    aspectRatio,
+    page,
     useCustomImage,
     imageUrl,
     overlayColor,
@@ -78,7 +78,7 @@ function Edit(_ref) {
     }
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.BlockControls, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.__experimentalLinkControl, {
     searchInputPlaceholder: "Search here...",
-    value: attributes.page,
+    value: page,
     onChange: newPage => setAttributes({
       page: newPage
     }),
@@ -153,7 +153,7 @@ function Edit(_ref) {
   })))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("a", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
     onMouseOver: () => setIsHovered(true),
     onMouseOut: () => setIsHovered(false),
-    className: "ws-grid-item-overlay-container",
+    className: "ws-cover-overlay-container",
     style: {
       backgroundColor: isHovered ? overlayHoverColor : overlayColor,
       'aspect-ratio': attributes.aspectRatio
@@ -311,7 +311,7 @@ function _extends() {
   \************************/
 /***/ (function(module) {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"willsides/cover-link","version":"1.1.0","title":"Cover Link","category":"design","icon":"cover-image","description":"A post link with text overlaid on the thumbnail","supports":{"html":false,"color":{"background":true,"text":false}},"attributes":{"page":{"type":"object","default":"none"},"aspectRatio":{"type":"string","default":"16/9"},"useCustomImage":{"type":"boolean","default":false},"imageUrl":{"type":"string","default":""},"overlayColor":{"type":"string","default":"rgba(0, 0, 0, 0.35)"},"overlayHoverColor":{"type":"string","default":"rgba(0, 0, 0, 0.5)"}},"textdomain":"cover-link","editorScript":"file:./index.js","style":"file:./style-index.css","render":"file:./render.php"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"willsides/cover-link","version":"1.1.0","title":"Cover Link","category":"design","icon":"cover-image","description":"A post link with text overlaid on the thumbnail","supports":{"html":false,"color":{"background":false,"text":true}},"attributes":{"page":{"type":"object","default":"none"},"aspectRatio":{"type":"string","default":"16/9"},"useCustomImage":{"type":"boolean","default":false},"imageUrl":{"type":"string","default":""},"overlayColor":{"type":"string","default":"rgba(0, 0, 0, 0.35)"},"overlayHoverColor":{"type":"string","default":"rgba(0, 0, 0, 0.5)"}},"textdomain":"cover-link","editorScript":"file:./index.js","style":"file:./style-index.css","render":"file:./render.php"}');
 
 /***/ })
 

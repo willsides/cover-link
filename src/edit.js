@@ -20,7 +20,7 @@ import { useState } from 'react';
 
 export default function Edit( { attributes, setAttributes } ) {
 	const { 
-		aspectRatio, 
+		page,
 		useCustomImage, 
 		imageUrl, 
 		overlayColor, 
@@ -34,7 +34,7 @@ export default function Edit( { attributes, setAttributes } ) {
 			<BlockControls>
 				<LinkControl
 					searchInputPlaceholder="Search here..."
-					value={ attributes.page }
+					value={ page }
 					onChange={ ( newPage ) => setAttributes( { page: newPage } ) }
 					showInitialSuggestions={true}
 				>
@@ -117,7 +117,7 @@ export default function Edit( { attributes, setAttributes } ) {
 				<div 
 				    onMouseOver={() => setIsHovered(true)}
 					onMouseOut={() => setIsHovered(false)}
-					className="ws-grid-item-overlay-container" 
+					className="ws-cover-overlay-container" 
 					style={{ backgroundColor: isHovered ? overlayHoverColor : overlayColor, 'aspect-ratio': attributes.aspectRatio }}
 				>
 					<InnerBlocks orientation="vertical"/>

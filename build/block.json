@@ -10,8 +10,8 @@
   "supports": {
     "html": false,
     "color": {
-      "background": true,
-      "text": false
+      "background": false,
+      "text": true
     }
   },
   "attributes": {

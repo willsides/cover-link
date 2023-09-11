@@ -1,4 +1,4 @@
-.ws-grid-item-overlay-container {
+.ws-cover-overlay-container {
     width: 100%;
     height: 100%;
     margin: 0;
@@ -8,17 +8,25 @@
     justify-content: center;
     align-items: center;
 }
-.ws-grid-item-overlay-container:hover {
+.ws-cover-overlay-container:hover {
     transition: 0.2s;
+    background-color: rgba(0, 0, 0, 0.5) !important;
 }
 .wp-block-willsides-cover-link {
     background-position: center;
     background-size: cover;
 }
-
-.ws-grid-item-overlay-container > * {
+.wp-block-willsides-cover-link a {
+    width: 100%;
+    height: 100%;
+    color: inherit;
+}
+.ws-cover-overlay-container > * {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    color: inherit;
 }

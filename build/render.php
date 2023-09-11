@@ -22,22 +22,32 @@ $overlay_styles = sprintf(
     $overlayColor
 ); 
 
-// Generate dynamic CSS for hover effect
-$hover_css = sprintf(
-    '<style>.ws-grid-item-overlay-container:hover { background-color: %s !important; }</style>',
-    $overlayHoverColor
+$uniqueId = uniqid('ws-cover-overlay-');
+$innerDivAttributes = sprintf(
+    'class="ws-cover-overlay-container" id="%s"',
+    $uniqueId
 );
+
+if ($overlayHoverColor != "rgba(0, 0, 0, 0.5)") {
+    // Generate dynamic CSS for hover effect
+    $hover_css = sprintf(
+        '<style>#%s:hover { background-color: %s !important; }</style>',
+        $uniqueId,
+        $overlayHoverColor
+    );
+    echo $hover_css;
+}
 
 // Prepare content
 $content = isset($content) ? $content : '';
 
 // Output block HTML
-echo $hover_css;
 echo sprintf(
-    '<div %1$s style="%2$s"><a href="%3$s"><div class="ws-grid-item-overlay-container" style="%4$s">%5$s</div></a></div>',
+    '<div %1$s style="%2$s"><a href="%3$s"><div %4$s style="%5$s">%6$s</div></a></div>',
     $wrapper_attributes,
     $inline_styles,
     $permalink,
+    $innerDivAttributes,
     $overlay_styles,
     $content
 );
