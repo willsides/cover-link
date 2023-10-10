@@ -59,6 +59,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+const TEMPLATE = [['core/post-title', {
+  "textAlign": "center",
+  "textColor": "background"
+}]];
 function Edit(_ref) {
   let {
     attributes,
@@ -164,7 +168,8 @@ function Edit(_ref) {
       'aspect-ratio': attributes.aspectRatio
     }
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InnerBlocks, {
-    orientation: "vertical"
+    orientation: "vertical",
+    template: TEMPLATE
   }))));
 }
 
