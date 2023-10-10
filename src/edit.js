@@ -18,6 +18,10 @@ import { crop } from '@wordpress/icons';
 
 import { useState } from 'react';
 
+const TEMPLATE = [
+	[ 'core/post-title', {"textAlign":"center","textColor":"background"} ],
+  ];
+
 export default function Edit( { attributes, setAttributes } ) {
 	const { 
 		page,
@@ -123,7 +127,10 @@ export default function Edit( { attributes, setAttributes } ) {
 					className="ws-cover-overlay-container" 
 					style={{ backgroundColor: isHovered ? overlayHoverColor : overlayColor, 'aspect-ratio': attributes.aspectRatio }}
 				>
-					<InnerBlocks orientation="vertical"/>
+					<InnerBlocks 
+						orientation="vertical"
+						template={ TEMPLATE }
+						/>
 				</div>
 			</a>
 		</div>
