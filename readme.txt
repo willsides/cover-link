@@ -1,3 +1,14 @@
+----------------------
+------Deprecated------
+----------------------
+
+Please use the Image Container - Dynamic or Image Container - Static plugins for all future implementations
+Those updated blocks offer better UI, more functionality, and adhere better to Gutenberg best practices for better code maintenance and usability in themes
+
+----------------------
+----------------------
+----------------------
+
 === Cover Link ===
 Contributors:      Will Sides
 Tags:              block
